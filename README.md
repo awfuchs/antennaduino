@@ -30,7 +30,7 @@ Pressing any of the buttons generates an interrupt, which is handled as follows:
 Press button | Light LEDs | Energize relays
 -------------|------------|----------------
 1 | 1 | (none)
-2 | 2 and the last selected of 4/5/6 | R1 and R2, conditionally R3 and/or R4 as last selected
+2 | 2 and the last selected of 4/5/6 | R1, R2, conditionally R3, R4 as last selected
 3 | 3 | R1
 4 | 2 and 4 | R1, R2
 5 | 2 and 5 | R1, R2, R3, R4
