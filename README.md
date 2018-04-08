@@ -14,3 +14,24 @@ The control box has six buttons, each with an LED, and four relays that switch t
 * Antenna 3: R1 is energized.
 
 The setting is selected by pressing the appropriate button, which illuminates in a modified radiobutton scheme.
+
+## Physical housing
+
+This is the initial build of the controller box:
+
+![](antennaduino_exterior.png) ![](antennaduino_interior.png)
+
+The Arduino reads the buttons, sets the LEDs, and controls the adjacent relays. These four relays in turn control 12v lines that run to the remote box to actuate the corresponding four relays there.
+
+## Button actuation
+
+Pressing any of the buttons generates an interrupt, which is handled as follows:
+
+Press button | Light LEDs | Energize relays
+-------------|------------|----------------
+1 | 1 | (none)
+2 | 2 and the last selected of 4/5/6 | R1 and R2, conditionally R3 and/or R4 as last selected
+3 | 3 | R1
+4 | 2 and 4 | R1, R2
+5 | 2 and 5 | R1, R2, R3, R4
+6 | 2 and 6 | R1, R2, R3
