@@ -35,3 +35,16 @@ Press button | Light LEDs | Energize relays
 4 | 2 and 4 | R1, R2
 5 | 2 and 5 | R1, R2, R3, R4
 6 | 2 and 6 | R1, R2, R3
+
+## Effect of relays in the antenna switch
+
+The relays in the remote switchbox mimic the settings of those in the control box. This has the effect of switching the antenna thus:
+
+![](relays_scribble.png)
+
+* R1 selects Antenna 1 or not
+* R2 selects Antenna 3 or not
+* R3 selects which element of Antenna 2 array is fed leading
+* R4 shorts the delay line out of action, causing a generally omnidirectional, somewhat broadside field
+
+Note that Antenna 2 is a vertical pair spaced 90° apart; the 90° phasing line creates a cardioid field strength in the direction of the lagging element.
