@@ -1,6 +1,8 @@
 # antennaduino
 Arduino code for controlling remote antenna switch
 
+## Overview
+
 This arduino code runs in a control box that switches antennas at a remote point on the roof.
 
 The control box has six buttons, each with an LED, and four relays that switch the corresponding four relays in the remote switch. The possible settings are:
