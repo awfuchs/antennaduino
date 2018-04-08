@@ -1,5 +1,5 @@
 # antennaduino
-Arduino code for controlling remote antenna switch
+Arduino-based control box for remote antenna switch
 
 ## Overview
 
